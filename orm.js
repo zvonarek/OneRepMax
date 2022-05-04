@@ -1,10 +1,27 @@
 function ORM(){
   res = calcORM();
   instructPlates(res);
+  document.getElementById('reps').addEventListener('keydown', function(event) {
+    const key = event.key;
+    if (key === "Backspace" || key === "Delete") {
+        return resetReps();
+    }
+  });
   return;
 };
 
-function reset() {
+function resetReps() {
+    document.getElementById('reps').value = '';
+    document.getElementById("demoORM").innerHTML= "";
+    for (let i=0; i<numPlates.length; i++) {
+      var typePlates = [45,25,10,5,2.5];
+      var id = "demo" + typePlates[i];
+      document.getElementById(String(id)).innerHTML="";
+    };
+};
+
+
+function resetAll() {
     document.getElementById('reps').value = '';
     document.getElementById('weight').value = '';
     document.getElementById("demoORM").innerHTML= "";
