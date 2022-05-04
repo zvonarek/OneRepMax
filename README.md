@@ -1,2 +1,2 @@
 # OneRepMax
-Calculated by averaging the well-known Epley and Brzycki formulas.  This calculator will also instruct you on how to load the bar.
+While looking for one rep max calculators online I could not find one that would make it easier to load the bar, which is why I added that functionality into my [version](https://htmlpreview.github.io/?https://github.com/zvonarek/OneRepMax/blob/a052af07b2bae52ce4a12df06cf8178847272176/orm.html). This is also my first web app!
