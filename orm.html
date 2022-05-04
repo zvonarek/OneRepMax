@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One Rep Max Calculator</title>
+  <link rel="stylesheet" href="orm.css">
+<body>
+  <div id=wrap>
+    <h1>Estimated One Rep Maximum</h1>
+      <h2>Calculated by averaging the well-known
+      <a href="https://en.wikipedia.org/wiki/One-repetition_maximum#Epley_formula" target="_blank">Epley</a>
+      and <a href="https://en.wikipedia.org/wiki/One-repetition_maximum#Brzycki" target="_blank">Brzycki</a>
+      formulas.</h2>
+      <h2>This calculator will also instruct you on how to load the bar.</h2>
+      <input class="content" type="text" id="weight" placeholder="Weight in lbs">
+      <input class="content" type="text" id="reps" oninput="ORM()" placeholder="Repetitions">
+      <br></br>
+      <p id="demoORM"></p>
+      <p id="demo45"></p>
+      <p id="demo25"></p>
+      <p id="demo10"></p>
+      <p id="demo5"></p>
+      <p id="demo2.5"></p>
+      <button onclick="reset()" class="button">Clear</button>
+  <script type ="text/javascript" src="orm.js"> </script>
+</div>
+</body>
+</html>
